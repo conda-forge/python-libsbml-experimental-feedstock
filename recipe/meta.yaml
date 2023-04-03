@@ -1,5 +1,5 @@
 {% set name = "python-libsbml-experimental" %}
-{% set version = "5.19.7" %}
+{% set version = "5.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -10,10 +10,10 @@ source:
   # provides additional SBML extensions that are not yet ratified, and are 
   # disabled in the `python-libsbml` build. 
   url: https://github.com/sbmlteam/python-libsbml/releases/download/v{{ version }}/python-libsbml-{{ version }}.tar.gz
-  sha256: 447b1fde7aceccd11a93dc9f589ffd9319ba854d7b7583f911259a8b0127ab7b
+  sha256: 2175c56b98a215851cf115390e2a4848ce32ddad4ea2cea09ac518cc34f81881
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
