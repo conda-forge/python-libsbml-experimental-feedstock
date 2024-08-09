@@ -10,7 +10,7 @@ source:
   # provides additional SBML extensions that are not yet ratified, and are 
   # disabled in the `python-libsbml` build. 
   url: https://github.com/sbmlteam/python-libsbml/releases/download/v{{ version }}/python-libsbml-{{ version }}.tar.gz
-  sha256: 57bc01850f7988e763d052102ee40d2b5144e087102b508fac569339c69872a8
+  sha256: c9d57cb81661eec7d9ec3a0efa463999d6cd389418dfdbeea764664f3a44617a
 
 build:
   number: 1
@@ -28,9 +28,11 @@ requirements:
     - setuptools
     - pip
     - swig >=3.0.12
+    - zlib
 
   run:
     - python
+    - zlib
 
 test:
   # Python imports
