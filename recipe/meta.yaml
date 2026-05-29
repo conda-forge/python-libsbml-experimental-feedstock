@@ -24,13 +24,12 @@ requirements:
     - {{ stdlib('c') }}
     - make            # [unix]
     - cmake
-    - swig
+    - swig >=3.0.12
 
   host:
     - python
     - setuptools
     - pip
-    - swig >=3.0.12
     - zlib
 
   run:
